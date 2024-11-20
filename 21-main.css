@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cambria;
+}
+
+header {
+    background-color: #F5F5DC;
+    padding: 15px 5px;
+    max-width: 1300px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: #F0F8FF;
+    border-radius: 10px;
+    height: 42px;
+}
+
+.nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F0F8FF;
+}
+
+.nav-logo {
+    padding: 21px;
+}
+
+.nav {
+    /* display: flex; */
+    flex: 1;
+   text-align: right;
+   justify-content: space-evenly;
+}
+
+.nav a {
+     padding-left: 21px; 
+
+} 
+
+.nav a:hover {
+    color:#FDEE00;
+}
+
+
+
+.pho-body {
+    background-color: #F5F5DC;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1300px;
+}
+
+.picture-sec img {
+    height: 300px;
+    width: 500px;
+    margin-top: 40px;
+}
+
+.pho-text h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin: 25px 0px;
+    color: #002366;
+
+}
+
+.pho-text p {
+    margin-bottom: 20px;
+    color: #002366;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #002366;
+    color: white;
+    padding: 5px 21px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: border-radius 0.5s;
+}
+
+.btn:hover {
+    border-radius: 20px;
+    color:#FDEE00;
+    border-bottom: none;
+}
+
+
+.featured-sec {
+    background-color: #F5F5DC;
+    height: 800px;
+    max-width: 1300px;
+}
+
+.feature-head {
+    padding: 21px 90px ;
+}
+
+
+.item-sec {
+    display: flex;
+    padding: 21px 90px ;
+    justify-content: space-evenly;
+    transition: transform 0.5s;
+    flex-wrap: wrap;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.prize {
+    text-align: center;
+    padding: 5px 5px 10px 5px;
+}
+
+.buy-button button {
+    width: 100px;
+    height: 21px;
+    color: black;
+    background-color: #F0FFFF;
+    border: none;
+    border-radius: 3px;
+}
+
+.buy-button button:hover {
+    cursor: pointer;
+}
+
+.featured-sec2 {
+    display: none;
+}
+
+
+
+/* About Section */
+
+.About-sec  {
+    background-color: black;
+    color:#F0F8FF;
+    height: 270px;
+    max-width: 1300px;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.about-content p{
+    color: #FDEE00;
+    font-size: 10px;
+}
+
+span {
+    color: #F0F8FF;
+}
+
+
+.about-content img {
+    width: 210px;
+    height: 110px;
+    padding-top: 20px;
+    margin: 51px 50px 0px 50px;
+    padding-left: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content .text {
+    padding-left: 70px;
+    max-width: 600px;
+}
+
+.about-content .text h2 {
+    text-align: center;
+}
+
+
+
+.footer {
+    background-color: black;
+    max-width: 1300px;
+}
+
+.footer h2 {
+    color: #F0F8FF;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.footer h3 {
+    color: #E7E8D1;
+    font-size: 21px;
+}
+
+.foot {
+    display: flex;
+}
+
+.footer a {
+    display: block;
+    font-size:11px;
+    padding-top: 10px;
+    border-bottom: none;
+}
+
+.pf {
+    padding: 10px 10px 10px 30px;
+    flex-basis: 33%;
+}
+
+.pf a {
+    text-decoration: none;
+    color: #F0F8FF;
+}
+
+.pf a:hover {
+    color: #FDEE00;
+}
+
+
+/* ---media query */
+
+@media only screen and (max-width: 800px) {
+    .nav-logo {
+        padding-left: 45px;
+    }
+
+    .navbar {
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        margin-left: 110px;
+    }
+    .nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav  a {
+        color:#F0F8FF;
+        padding-right: 15px;
+    }
+
+    .nav #acc {
+        display: none;
+    }
+
+    .nav ul{
+        background-color:black;
+        height: 25px;
+        border-radius: 5px;
+    }
+
+    .nav li {
+        padding-top: 2px;
+    }
+
+    .picture-sec {
+        display: none;
+    }
+
+    .pho-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .featured-sec {
+        display: none;
+    }
+
+    .featured-head1 {
+        text-align: center;
+    }
+
+    .featured-sec2 {
+        display: contents;
+        /* height: 1400px; */
+    }
+
+    .box-content1 {
+        text-align: center;
+        padding: 10px 10px ;
+    }
+
+    .About-sec{
+        display: none;
+    }
+    
+}

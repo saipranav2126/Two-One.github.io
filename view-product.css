@@ -1,0 +1,280 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.head {
+    padding: 15px 5px;
+}
+
+.navbar {
+    color: #F0F8FF;
+    background-color: black;
+    height: 42px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 1.3125rem ;
+    padding-bottom: 0px;
+}
+
+h6 {
+    font-size: 8px;
+    margin-left: 25px;
+    color: #FDEE00;
+}
+
+a {
+    font-size: 1rem ;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-bottom: 1px ;
+    padding-bottom: 0px;
+}
+
+a:hover {
+    color: #FDEE00;
+    border-bottom: 2px solid #F0F8FF;
+    border-radius: 3px;
+}
+
+a:active {
+    color: white;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 0.85rem;
+    border: 0.85px solid rgb(43, 44, 45) ;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.search-sec {
+    display: flex;
+    justify-content: space-evenly;
+    height: 21px;
+    width: 100px;
+}
+
+.search-icon {
+    
+    border: 2px solid #FFFFFF ;
+    background-color:#FFFFFF;
+    color: black;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+.items-sec {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+    margin-top: 10px;
+}
+
+.box-content img{
+    width: 246.44px;
+    height: 246.44px;
+}
+
+.box-content p {
+    text-align: center;
+}
+
+.box-content .prize {
+    text-align: center;
+    padding: 6px 2px ;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+button {
+    width: 100px;
+    height: 21px;
+    color: black;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #F0FFFF;
+}
+
+
+.footer {
+    background-color: black;
+}
+
+.footer h2 {
+    color: #F0F8FF;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.footer h3 {
+    color: #E7E8D1;
+    font-size: 21px;
+}
+
+.foot {
+    display: flex;
+}
+
+.footer a {
+    display: block;
+    font-size:11px;
+    padding-top: 10px;
+    border-bottom: none;
+}
+
+.footer a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.pf {
+    padding: 10px 10px 10px 30px;
+    flex-basis: 33%;
+}
+
+/* single product */
+
+.product-inf {
+    display: flex;
+    padding: 20px 40px ;
+}
+
+.product-img {
+    display: flex;
+}
+
+.product-img img {
+    padding: 5px 5px;
+}
+
+.product-details {
+    padding-left: 21px;
+}
+
+.product-features ul {
+    padding: 21px;
+}
+
+.product-details h2 {
+    padding: 10px 10px ;
+}
+
+.product-details h3 {
+    padding: 10px 10px ;
+    padding-bottom: 1px;
+}
+
+.product-details p {
+    padding: 00px 10px ;
+    padding-bottom: 10px;
+    color: grey;
+    font-size: 10px;
+}
+
+.size {
+    display: flex;
+    padding: 10px 10px ;
+}
+
+.size h4 {
+    padding-right: 21px;
+}
+
+.size select {
+    height: 21px ;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.quantity {
+    display: flex;
+    padding: 10px 10px ;
+}
+
+.quantity h4 {
+    padding-right: 21px ;
+}
+
+.quantity input {
+    height: 21px ;
+    width: 42px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 10px ;
+}
+
+.product-details button {
+    color: black;
+    margin: 10px 10px ;
+    padding: 10px 10px ;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    font-size: 21px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.similar-head {
+    text-align: center;
+}
+
+.view {
+    text-align: end;
+}
+
+.view a {
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    padding-right: 10px;
+}
+
+.view-img .p-img:hover {
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .product-inf {
+        display: inline;
+    } 
+
+    /* .product-img {
+        
+    } */
+
+    .view-img .p-img img {
+        width: 200px;
+        height: 200px;
+        padding-left: 100px;
+    }
+
+    #p2 {
+        display: none;  
+    }
+
+    #p1 {
+        display: none;
+    }
+}
